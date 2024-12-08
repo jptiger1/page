@@ -1,0 +1,223 @@
+/* General Reset */
+* {
+font-family: serif;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 20px;
+    background: #272727;
+}
+
+.hero .name {
+    font-size: 2rem; 
+    font-weight: bold; 
+    margin-right: auto;
+    color: #ffffff;
+}
+
+.hero .nav-links {
+    display: flex;
+    list-style: none; 
+    gap: 2rem; 
+}
+
+.hero .nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.nav-links a:hover, .nav-links a.current {
+    color: #b0b0b0;
+}
+
+/* Intro Section */
+.intro {
+    text-align: center;
+}
+
+.intro h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #2b4a1c;
+    max-width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.intro .hero-description {
+    font-size: 2rem;
+    color: #666;
+    margin-top: 1rem;
+}
+
+
+/* about page */
+.About {
+    text-align: center;
+    padding: 5rem 2rem;
+    font-size: 2rem;
+    color: #2b4a1c;
+}
+
+.about-section {
+    max-width: 900px;
+    margin: 0 auto;
+    color: #2b4a1c;
+    padding: 1rem;
+}
+
+
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.about-figure {
+    flex: 1 1 200px;
+    max-width: 300px;
+    margin: 0;
+}
+
+.about-headshot {
+    margin-left: -5rem;
+    width: 125%;
+    height: auto;
+    display: block;
+}
+
+.about-text {
+    flex: 2 1 400px;
+    min-width: 300px;
+}
+
+.about-text h3 {
+    text-align: center;
+    font-size: 3em;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.about-text p {
+    font-size: 1.2em;
+    line-height: 3rem;
+    margin-bottom: 1rem;
+}
+
+
+/* Image Grid Section */
+.projects {
+    text-align: center;
+    padding: 5rem 2rem;
+    font-size: 2rem;
+    color: #000;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Force a 2x2 grid */
+    gap: 2rem; 
+    padding: 1rem 5rem; 
+}
+
+.image-grid .grid-item {
+    text-align: center;
+}
+
+.image-grid img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0; 
+    transition: box-shadow 0.1s ease-in-out;
+}
+
+.image-grid h3 {
+    font-size: 1.8rem;
+    margin: 0.2rem 0.5rem;
+
+}
+
+.image-grid p {
+    font-size: 1.1rem;
+    margin: 0rem;
+}
+
+.image-grid .small-text {
+    font-size: 0.8rem;
+    color: #000000;
+}
+.image-grid img:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 
+                0 6px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .image-grid {
+        grid-template-columns: 1fr; /* Switch to 1x1 grid for smaller devices */
+    }
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #272727;
+    font-family: sans-serif;
+}
+
+footer p {
+    margin: 0;
+    color: #ffffff;
+}
+
+footer a svg {
+    fill: #ffffff; /* LinkedIn brand color */
+    transition: fill 0.3s;
+    vertical-align: bottom;
+}
+
+footer a svg:hover {
+    fill: #808080;
+}
+
+.connect-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem 0;
+}
+
+.connect-section p {
+    margin-bottom: 1rem;
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+
+.connect-section a {
+    display: block;
+}
