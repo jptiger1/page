@@ -1,12 +1,12 @@
 {
   "name": "portfolio-website",
   "version": "1.0.0",
-  "description": "Portfolio website for Jacob Henley",
+  "description": "Portfolio website for JP Tiger",
   "main": "index.html",
   "scripts": {
     "start": "lite-server"
   },
-  "author": "Jacob Henley",
+  "author": "JP Tiger",
   "license": "ISC",
   "devDependencies": {
     "lite-server": "^2.6.1"
